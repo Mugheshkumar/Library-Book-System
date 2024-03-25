@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #444;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.big-title {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .big-title h1 {
+            font-size: 28pt;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .homepage-image {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .homepage-image img {
+            height: 1in;
+            width: 100%;
+            max-width: 100%;
+        }
+.text-and-image-container {
+            display: flex;
+        }
+
+        
+
+ .text-box {
+            width: 7in;
+            height: 4.2in;
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin-left: 250px;
+        }
+
+        .image-box {
+            width: 3in; /* Adjust width as needed */
+            height: 3in; /* Adjust height as needed */
+            background-color: #ddd; /* Adjust background color as needed */
+            padding: 10px;
+            margin-left: 110px; /* Adjust the margin to add space */
+            margin-top: 50px;
+        }
+
+        .image-box img {
+            height: 100%;
+            width: 100%;
+            max-width: 100%;
+            object-fit: cover;
+        }
+
+.login-btn {
+    float: right;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
