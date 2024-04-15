@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="loginstyle.css" />
+  </head>
+  <body>
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <script src="/backend/app.js"></script>
+    <div class="topbar">
+      <div class="left-items">
+        <a id="logo" href="/wp-admin/">Library Booking System</a>
+      </div>
+      <div class="right-items">
+        <a id="home-link" class="right-link" style="font-family: InterVariable"
+          >Home</a
+        >
+        <a id="redeem-link" class="right-link" href="./redeem.html">Redeem</a>
+        <a id="about-link" class="right-link">About Us</a>
+        <a id="profile-link" class="right-link">My Profile</a>
+        <a id="login-link" class="right-link">Log In</a>
+
+        >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <hr />
+
+    <div class="container">
+      <h1>Login</h1>
+      <a href="./redeem.html">this link</a>
+
+      <form id="loginForm" action="./login.php" method="post">
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
+        </div>
+        <div class="form-group">
+          <label for="studentId">ID:</label>
+          <input type="text" id="studentId" name="studentId" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <a href="#">Forgot Password?</a>
+        <br /><br /><br />
+        <div class="form-group">
+          <button type="submit" class="btn" id="loginButton">Login</button>
+        </div>
+      </form>
+      <div id="errorMessage"></div>
+    </div>
+    <div class="backHome">
+      <button type="submit" class="btn">
+        Back to Homepage <span class="arrow"></span>
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
