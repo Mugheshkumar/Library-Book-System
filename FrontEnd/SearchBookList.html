@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Book List</title>
+    <link rel="stylesheet" type="text/css" href="loginstyle.css" />
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .card-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+
+      .divList {
+        text-align: center; /* Add this to center the cards horizontally */
+        display: flex;
+        justify-content: flex-end;
+
+      }
+      .container {
+        max-width: 1200px;
+        margin: 40px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+
+      img {
+        height: 200px;
+      }
+
+      body {
+        padding: 20px;
+      }
+      #search-form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #f7f7f7;
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+
+      #search-input {
+        flex-grow: 1;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+      }
+
+      #search-btn {
+        background-color: #f7f7f7;
+        color: #fff;
+        padding: 0px 15px;
+        border: none;
+        height: 100%;
+        width: 200px; /* added width property to set the button width */
+        cursor: pointer;
+      }
+
+      #search-btn:hover {
+        background-color: #6f6f6f;
+      }
+
+      #search-results {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      #search-results li {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      #search-results li:hover {
+        background-color: #f0f0f0;
+      }
+      .text-container {
+        flex-grow: 1;
+      }
+
+      .text-container h2 {
+        margin-top: 0;
+      }
+
+      .card {
+        margin-left: 20px;
+        flex-direction: column;
+        display: inline-block; /* make cards inline */
+        align-items: center;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+        width: 300px; /* adjust the width as needed */
+      }
+
+      .button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px; /* add some space between the text and the buttons */
+      }
+
+      .button-container button {
+        margin: 10px;
+        padding: 10px 20px;
+        width: 90px;
+        border: none;
+        border-radius: 10px;
+        background-color: #4caf50;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      .button-container button:hover {
+        background-color: #3e8e41;
+      }
+
+      /* Responsive design */
+
+      @media (max-width: 768px) {
+        .card {
+          width: 200px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .card {
+          width: 150px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="left-items">
+        <a id="logo" href="/wp-admin/">Library Booking System</a>
+      </div>
+      <div class="right-items">
+        <a
+          id="Cart-link"
+          class="right-link"
+          style="font-family: InterVariable"
+          href=""
+        >
+          <img src="../image/cart.png" alt="Home Image" style="height: 40px" />
+        </a>
+        <a id="home-link" class="right-link" style="font-family: InterVariable"
+          >Home</a
+        >
+        <a id="redeem-link" href="../FrontEnd/redeem.html" class="right-link">Redeem</a>
+        <a id="about-link" class="right-link">About Us</a>
+        <a id="profile-link" class="right-link">My Profile</a>
+        <a id="login-link" class="right-link">Log In</a>
+
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      </div>
+    </div>
+    <br /><br /><br /><br /><br /><br />
+
+    <form id="search-form">
+      <input type="search" id="search-input" placeholder="Search..." />
+      <button id="search-btn" type="submit">
+        <img
+          src="../image/search.png"
+          alt="Search Image"
+          style="height: 40px"
+        />
+      </button>
+      <ul id="search-results"></ul>
+    </form>
+    <br /><br />
+    <h2>Result</h2>
+    <br /><br />
+
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   <div id="divList" style="margin-left: 100px;"></div>
+
+    <script src="../backend/SearchListMaker.js"></script>
+    </div>
+    <!-- Add more cards here -->
+  </body>
+</html>
